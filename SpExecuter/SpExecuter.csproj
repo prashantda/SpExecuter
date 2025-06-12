@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>SpExecuter</PackageId>
+    <Version>1.0.0</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsRoslynAnalyzer>true</IsRoslynAnalyzer>
+    <OutputItemType>Analyzer</OutputItemType>
+    <EnforceExtendeAnalyzerRules>true</EnforceExtendeAnalyzerRules>
+    <Authors>Prashant Darade</Authors>
+    <Description>Automates stored procedure execution exclusively on MSSQL.</Description>
+    <RunAnalyzers>false</RunAnalyzers>
+    <IncludeBuildOutput>true</IncludeBuildOutput>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+
+    <PackageReference Include="Microsoft.CodeAnalysis.Common" Version="4.13.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="4.13.0"/>
+    <PackageReference Include="Sigil" Version="5.0.0" />
+    <PackageReference Include="Utf8Json" Version="1.3.7"   />
+
+    <PackageReference Include="Microsoft.Data.SqlClient"  Version="3.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0"  />
+
+
+  </ItemGroup>
+</Project>
